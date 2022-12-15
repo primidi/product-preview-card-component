@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <main
+      class="mx-3 my-5 flex h-fit flex-col justify-center gap-3 rounded-md bg-white align-middle"
+    >
+      <picture>
+        <source
+          class="rounded-t-md"
+          srcset="../images/image-product-desktop.jpg"
+          media="(min-width: 1440px)"
+        />
+        <img
+          class="rounded-t-md"
+          src="../images/image-product-mobile.jpg"
+          alt="product picture"
+        />
+      </picture>
+      <div class="content my-3 flex flex-col gap-4 px-4">
+        <h3
+          class="text-2xs tracking-more-widest text-dark-grayish-blue opacity-80"
+        >
+          PERFUME
+        </h3>
+        <h1 class="font-serif text-2xl leading-none">
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p class="text-xs leading-relaxed text-dark-grayish-blue opacity-80">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+      </div>
+      <div class="price flex justify-start gap-5 px-4">
+        <h2 class="font-serif text-2xl text-dark-cyan">$149.99</h2>
+        <p class="self-center text-xs opacity-80"><s>$169.99</s></p>
+      </div>
+      <button
+        type="button"
+        class="mx-5 mb-5 flex justify-center gap-2 rounded-lg bg-dark-cyan px-4 py-3 text-center text-xs font-semibold text-white"
+      >
+        <img src="../images/icon-cart.svg" class="h-3.5 self-center" />
+        Add to Cart
+      </button>
+    </main>
+  </body>
+</html>
